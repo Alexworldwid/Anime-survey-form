@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-Form</title>
+    <link rel="stylesheet" type="image/jpg" href="WhatsApp Image 2024-01-23 at 09.11.19_b152395f.jpg">
+    <link rel="stylesheet" href="index.css">
+
+    
+</head>
+<body>
+    <div class="info">
+    <h1 id="title">Anime Survey Form</h1>
+    <p id="description">Collecting Info to know how many Anime lovers in our midst</p>
+    </div>
+
+    <form action="" method="post" id="survey-form">
+
+        <fieldset>
+           <label for="name">Full name <input type="text" id="name" required name="name" placeholder="John Doe"></label>
+           <label for="email">Enter email <input type="email" id="email" required name="mail" placeholder="oba@gmail.com"></label>
+           <label for="age">Age <input type="number" placeholder="Enter your age" id="age" required name="age" min="13" max="120"></label>
+           <label for="dropdown">Which of these best describe you?
+            <select name="" id="dropdown">
+                <option value="">--select an option--</option>
+                <option value="1">Casual Viewer</option>
+                <option value="2">Anime Fan</option>
+                <option value="3">Otaku</option>
+                <option value="4">Anime Enthusiast</option>
+                <option value="5">Anime Connoisseur</option>
+            </select>
+            </label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>whats your best Anime of all time?</legend>
+            <div class="align-vertical">
+            <label for="uzumaki"><input id="uzumaki" type="radio" name="best"> Naruto</label>
+            <label for="one-piece"><input type="radio" name="best" id="one-piece"> One Piece</label>
+            <label for="AOT"><input type="radio" name="best" id="AOT"> AOT</label>
+            <label for="demon-slayer"><input type="radio" name="best" id="demon-slayer"> Demon Slayer</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>which of these would you recommend to a non-believer?</legend>
+            <div class="align-vertical">
+            <label for="onep"><input id="onep" type="checkbox" name="one-piece"> One Piece</label>
+            <label for="naruto"><input id="naruto" type="checkbox" name="naruto"> Naruto</label>
+            <label for="Attack"><input id="Attack" type="checkbox" name="AOT"> AOT</label>
+            <label for="DS"><input id="DS" type="checkbox" name="demon-slayer">Demon Slayer</label>
+            <label for="Bleach"><input id="Bleach" type="checkbox" name="Bleach"> Bleach</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <label for="comment"><textarea name="comment" id="comment" cols="50" rows="10" placeholder="additional comment"></textarea></label>
+        </fieldset>
+        <input type="submit" value="Submit" class="submit">
+    </form>
+</body>
+</html>
